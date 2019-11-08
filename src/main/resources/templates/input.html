@@ -1,0 +1,21 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert New Book</title>
+</head>
+<body>
+ <form th:object="${newBooks}" th:action="@{/inputBook}" method='POST'>
+ 
+ Title: <input name="title" size="20"> <br />
+ Author: <input name="author" size="20"><br />
+ Genre: <input name="genre" size="20"><br />
+ Rating: <input name="rating" size="20"><br />
+ 
+        
+ <input name="submit" type="submit" value="submit" />
+         
+</form>
+<a href="viewAll">View all Books</a>
+</body>
+</html>
